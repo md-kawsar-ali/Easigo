@@ -59,6 +59,26 @@ p {
     font-weight: 400;
 }
 
+.theme-btn {
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background: var(--primary);
+    padding: 14px 28px;
+    line-height: 1;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s linear;
+}
+
+.theme-btn:hover {
+    color: #ffffff;
+    background: var(--secondary);
+    transition: all 0.2s linear;
+}
+
 /* ==========================================
                 Header Style
 ============================================= */
