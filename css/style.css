@@ -112,7 +112,7 @@ p {
     text-align: center;
 }
 
-.hero-area img {
+.hero-area .hero-img {
     max-width: 200px;
     margin-bottom: 24px;
 }
