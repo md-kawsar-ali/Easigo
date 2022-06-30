@@ -47,6 +47,10 @@ body {
 /* ==========================================
                 Header Style
 ============================================= */
+.navbar-brand img {
+    height: 40px;
+}
+
 .navbar {
     --bs-navbar-active-color: rgba(3, 6, 112, 1);
 }
