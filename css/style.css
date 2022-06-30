@@ -135,13 +135,27 @@ p {
                 Review Style
 ============================================= */
 .reviews {
-    padding: 80px 0;
+    padding: 70px 0;
+}
+
+.reviews .text {
+    margin-bottom: 30px;
+}
+
+.reviews .text h2 {
+    color: var(--primary);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.reviews .text p {
+    color: #444444;
+    text-align: center;
 }
 
 .reviews .ti-header {
     display: none !important;
-}
-
-.reviews .ti-inner {
-    padding: 20px !important;
 }
