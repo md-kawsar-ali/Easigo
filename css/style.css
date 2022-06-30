@@ -84,6 +84,7 @@ p {
 ============================================= */
 .navbar-brand img {
     height: 40px;
+    margin-left: 5px;
 }
 
 .navbar {
