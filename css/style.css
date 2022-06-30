@@ -130,3 +130,18 @@ p {
     color: #444444;
     text-align: center;
 }
+
+/* ==========================================
+                Review Style
+============================================= */
+.reviews {
+    padding: 80px 0;
+}
+
+.reviews .ti-header {
+    display: none !important;
+}
+
+.reviews .ti-inner {
+    padding: 20px !important;
+}
