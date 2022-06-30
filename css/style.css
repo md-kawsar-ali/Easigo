@@ -12,6 +12,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -32,16 +33,24 @@ body {
 }
 
 .wrapper {
-    max-width: 600px;
+    max-width: 320px;
     margin: auto;
-
-    height: 700px;
 }
 
 .container,
 .container-sm {
     max-width: 540px;
     margin: auto;
+}
+
+h1,
+h2 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
 }
 
 /* ==========================================
@@ -63,4 +72,34 @@ body {
     padding: 3px 0;
     text-align: center;
     transition: all 0.3s;
+}
+
+/* ==========================================
+                Hero Style
+============================================= */
+.hero-area {
+    height: calc(100vh - 66px);
+    background: #f8f8ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-area img {
+    max-width: 200px;
+    margin-bottom: 24px;
+}
+
+.hero-area h1 {
+    color: var(--primary);
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.35;
+    text-transform: uppercase;
+}
+
+.hero-area p {
+    color: #444444;
+    text-align: center;
 }
