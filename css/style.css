@@ -51,10 +51,11 @@ body {
 
 h1,
 h2 {
-    font-size: 1rem;
+    font-size: 1.15rem;
 }
 
 p {
+    color: #232323;
     font-size: 14px;
     font-weight: 400;
 }
@@ -79,6 +80,15 @@ p {
     transition: all 0.2s linear;
 }
 
+.title {
+    color: var(--primary);
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
 /* ==========================================
                 Header Style
 ============================================= */
@@ -106,6 +116,7 @@ p {
 ============================================= */
 .hero-area {
     height: calc(100vh - 66px);
+    min-height: 500px;
     background: #f8f8ff;
     display: flex;
     align-items: center;
@@ -122,7 +133,7 @@ p {
     color: var(--primary);
     text-align: center;
     font-weight: 600;
-    line-height: 1.35;
+    line-height: 1.5;
     text-transform: uppercase;
 }
 
@@ -142,15 +153,6 @@ p {
     margin-bottom: 30px;
 }
 
-.reviews .text h2 {
-    color: var(--primary);
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.5;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
 .reviews .text p {
     color: #444444;
     text-align: center;
@@ -158,4 +160,32 @@ p {
 
 .reviews .ti-header {
     display: none !important;
+}
+
+/* ==========================================
+                Services Style
+============================================= */
+.services {
+    padding: 70px 0;
+    background: #f8f8ff;
+}
+
+.service {
+    background: #ffffff;
+    padding: 1.4rem;
+    border-radius: 5px;
+}
+
+.service img {
+    margin-bottom: 15px;
+}
+
+.service h3 {
+    color: var(--primary);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.service p {
+    margin-bottom: 0;
 }
