@@ -235,3 +235,56 @@ header {
 .service p {
     margin-bottom: 0;
 }
+
+/* ==========================================
+                Why Us Style
+============================================= */
+.why-us {
+    padding: 70px 0;
+}
+
+.why-us p {
+    color: #444444;
+    text-align: center;
+}
+
+.why-us ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.why-us ul li {
+    color: #444444;
+    font-weight: 400;
+    list-style: none;
+    padding: 10px 20px;
+    background: #f8f8ff;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.why-us ul li::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 5px;
+    border-radius: 3px;
+    background: rgba(3, 6, 112, 0.05);
+    transition: all 0.3s;
+}
+
+.why-us ul li:hover {
+    color: var(--primary);
+    transition: all 0.3s;
+}
+
+.why-us ul li:hover::before {
+    background: rgba(3, 6, 112, 0.75);
+    transition: all 0.3s;
+}
