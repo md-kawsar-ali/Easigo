@@ -336,10 +336,6 @@ header {
     padding: 70px 0;
 }
 
-.about .title {
-    text-align: left;
-}
-
 .about .text {
     text-align: left;
     margin-bottom: 50px;
@@ -360,7 +356,7 @@ header {
 .contact {
     padding: 20px 25px;
     border: 1px solid #f8f8ff;
-    box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.035);
+    box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.05);
     border-radius: 15px;
 }
 
@@ -405,35 +401,39 @@ header {
 .services {
     padding: 70px 0;
     background: #f8f8ff;
+    position: relative;
+}
+
+.services::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 55%;
+    background: url('../img/pattern-2.png');
 }
 
 .service {
     background: #ffffff;
     padding: 1.4rem;
     border-radius: 12px;
-    display: grid;
+    display: grid !important;
     grid-template-columns: 54px 1fr;
     align-items: center;
-    column-gap: 30px;
+    column-gap: 20px;
     position: relative;
     overflow: hidden;
     z-index: 0;
 }
 
-.service::before {
-    position: absolute;
-    content: '';
-    top: 14px;
-    left: 14px;
-    bottom: 14px;
-    width: 70px;
-    background: #474997;
-    border-radius: 8px;
-    z-index: -1;
-}
-
 .service .icon {
-    text-align: center;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: #030670;
 }
 
 .service img {
@@ -449,6 +449,25 @@ header {
 
 .service p {
     margin-bottom: 0;
+}
+
+.slick-dots {
+    bottom: -35px;
+}
+
+.slick-dots li button:before {
+    font-size: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 0.75;
+    color: #030670;
+}
+
+/* the slides */
+.slick-slide {
+    margin: 0 20px;
+    cursor: grab;
 }
 
 /* ==========================================

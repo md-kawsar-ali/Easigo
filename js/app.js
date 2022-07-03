@@ -1,4 +1,19 @@
-// Happy Coding
+// AOS - Animation
+AOS.init();
+
+// Slider
+$('.services-slider').slick({
+    dots: true,
+    arrows: false,
+    autoplay: false,
+    draggable: true,
+    pauseOnHover: false,
+    infinite: false,
+    pauseOnFocus: false,
+    slidesToShow: 1,
+    slidesToScroll: 1
+});
+
 // Become a Partner (Send Mail)
 function sendMail() {
     const getFname = jQuery('#fname').val();
