@@ -259,7 +259,7 @@ header {
 }
 
 .service img {
-    max-height: 42px;
+    max-height: 35px;
     filter: brightness(100);
 }
 
