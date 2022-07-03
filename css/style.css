@@ -69,6 +69,7 @@ p {
     padding: 15px;
     width: 150px;
     line-height: 1;
+    border: none;
     border-radius: 25px;
     text-transform: uppercase;
     text-decoration: none;
@@ -102,7 +103,7 @@ p {
 
 .title {
     color: var(--primary);
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     font-weight: 600;
     line-height: 1.5;
     text-align: center;
@@ -196,7 +197,7 @@ header {
     display: flex;
     align-items: center;
     text-decoration: none;
-    gap: 15px;
+    gap: 10px;
     padding: 5px 0;
 }
 
@@ -279,11 +280,15 @@ header {
     text-align: center;
 }
 
+/* ==========================================
+                Benefits Style
+============================================= */
+
 .benefits {
     background: url('../img/pattern-5.png');
     background-repeat: no-repeat;
     background-size: auto;
-    background-position: bottom left;
+    background-position: 30px bottom;
     position: relative;
     z-index: 0;
 }
@@ -292,7 +297,7 @@ header {
     position: absolute;
     content: '';
     top: 0;
-    right: 0;
+    right: 30px;
     height: 100%;
     width: 100%;
     background: url('../img/pattern-4.png');
@@ -327,21 +332,71 @@ header {
 /* ==========================================
                 Review Style
 ============================================= */
-.reviews {
+.about {
     padding: 70px 0;
 }
 
-.reviews .text {
-    margin-bottom: 30px;
+.about .title {
+    text-align: left;
 }
 
-.reviews .text p {
+.about .text {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.about .text p {
     color: #444444;
-    text-align: center;
+    line-height: 1.6;
 }
 
-.reviews .ti-header {
+.about .ti-header {
     display: none !important;
+}
+
+/* ==========================================
+                Contact Style
+============================================= */
+.contact {
+    padding: 20px 25px;
+    border: 1px solid #f8f8ff;
+    box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.035);
+    border-radius: 15px;
+}
+
+.contact h3 {
+    color: var(--primary);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.form-floating > .form-control,
+.form-floating > .form-select {
+    height: 3rem;
+    line-height: 1.25;
+}
+
+.form-floating > .form-control {
+    padding: 1rem;
+}
+
+.form-floating > label {
+    padding: 0.7rem 1rem;
+}
+
+.form-control:focus {
+    color: #444444;
+    background-color: #fff;
+    border-color: rgba(3, 6, 112, 0.5);
+    outline: 0;
+    box-shadow: none;
+}
+
+.contact .theme-btn {
+    border-radius: 5px;
 }
 
 /* ==========================================

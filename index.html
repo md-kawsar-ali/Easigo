@@ -177,21 +177,56 @@
     </section>
 
     <!-- ==========================================
-                        Reviews Section
+                        About Section
         =============================================== -->
-    <section class="reviews">
+    <section class="about">
         <div class="container">
             <div class="text">
-                <h2 class="title">Why you should call us before <br />your insurer?</h2>
-                <p>We claim off the other insurer, so you pay no excess.
-                    Even if your car is written off, we deliver a suitable car to your door.
-                    We arrange main agent repairs, so your car value is assured
-                    We collect dashcam, photos & witness statements & handle your claim quickly.</p>
-                <p>We help with parked car & uninsured driver claims.
-                    Our service is free & UK wide.</p>
+                <div class="text-center mb-3">
+                    <img src="img/car.png" class="w-75" alt="">
+                </div>
+
+                <h2 class="title">EasiGo Accident Management offers a free service for all non fault claims</h2>
+                <p>For over 10 years, we have been officially Government registered & helped tens of thousands of
+                    motorists. We ONLY handle road accident claims from repairing your vehicle and lending you a free
+                    one; to getting you compensation for your injuries & lost earnings. We deliver a replacement vehicle
+                    to your home or place of work, and will also organize for your damaged one to be taken to an
+                    approved repairer. Even if it is a write off, we will lend you a replacement until you have been
+                    paid out - most insurers will not supply you with a courtesy car, if yours is written off! Easigo
+                    will collect police reports and witness statements. We track down & claim directly off the other
+                    insurer, so you do not pay any Policy Excess or lose out.</p>
             </div>
 
-            <div src="https://cdn.trustindex.io/loader.js?ce90a9b57f2e79111f5cc9047e"></div>
+            <!-- ==== Contact Us ==== -->
+            <div class="contact">
+                <h3>Request a Callback</h3>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="fname" placeholder="Full Name" required />
+                    <label for="fname">Full Name</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="Email Address" required />
+                    <label for="email">Email address</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="tel" class="form-control" id="phone" placeholder="Phone Number" required />
+                    <label for="phone">Phone Number</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="subject" placeholder="Subject" required />
+                    <label for="subject">Subject</label>
+                </div>
+
+                <input type="submit" onclick="sendMail()" value="Submit Request" class="theme-btn w-100 b-none mb-1" />
+
+                <div class="text-center h6 mb-0" id="emailSendResult"></div>
+            </div>
+
+            <!--==== Reviews ====-->
+            <!-- <div src="https://cdn.trustindex.io/loader.js?ce90a9b57f2e79111f5cc9047e"></div> -->
         </div>
     </section>
 
@@ -287,6 +322,8 @@
         </div>
     </section>
 
+    <!--==== All JavaScript File ==== -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/app.js"></script>
 </body>
