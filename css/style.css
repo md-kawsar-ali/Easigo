@@ -168,7 +168,7 @@ header {
     width: 100%;
     background: #ffffff;
     z-index: 9999;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     border-top-left-radius: 18px;
     border-top-right-radius: 18px;
 }
@@ -192,6 +192,29 @@ header {
     color: var(--primary);
 }
 
+.call-us {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 15px;
+    padding: 5px 0;
+}
+
+.call-us h5 {
+    color: #444444;
+    font-size: 15px;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.call-us h3 {
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+}
+
 /* ==========================================
                 Hero Style
 ============================================= */
@@ -204,6 +227,8 @@ header {
     text-align: center;
     padding: 50px 0;
     position: relative;
+    overflow: hidden;
+    z-index: 0;
 }
 
 .hero-area::before {
@@ -213,21 +238,40 @@ header {
     left: 0;
     height: 92px;
     width: 100%;
-    background: #fff;
+    background: #ffffff;
     z-index: 0;
 }
 
+.hero-area::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 600px;
+    background: url('../img/pattern.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: translateX(-50%);
+    opacity: 0.5;
+    z-index: -1;
+}
+
 .hero-area .hero-img {
-    max-width: 200px;
+    max-width: 140px;
     margin-bottom: 30px;
 }
 
 .hero-area h1 {
     color: var(--primary);
     text-align: center;
-    font-weight: 600;
-    line-height: 1.5;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1.25;
     text-transform: uppercase;
+    margin-bottom: 15px;
 }
 
 .hero-area p {
@@ -235,11 +279,56 @@ header {
     text-align: center;
 }
 
+.benefits {
+    background: url('../img/pattern-5.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom left;
+    position: relative;
+    z-index: 0;
+}
+
+.benefits::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: url('../img/pattern-4.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top right;
+    z-index: -1;
+}
+
+.icons-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    text-align: center;
+}
+
+.icons-container svg {
+    margin-bottom: 10px;
+}
+
+.icon-item {
+    padding: 20px 10px;
+    border: 2px solid #f8f8ff;
+    background: #ffffff;
+    border-radius: 15px;
+}
+
+.icon-item p {
+    margin-bottom: 0;
+}
+
 /* ==========================================
                 Review Style
 ============================================= */
 .reviews {
-    padding: 0 0 70px 0;
+    padding: 70px 0;
 }
 
 .reviews .text {
