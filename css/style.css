@@ -320,7 +320,7 @@ header {
 
 .icon-item {
     padding: 20px 10px;
-    border: 2px solid #f8f8ff;
+    border: 2px solid #f1f1ff;
     background: #ffffff;
     border-radius: 15px;
 }
@@ -346,10 +346,6 @@ header {
     line-height: 1.6;
 }
 
-.about .ti-header {
-    display: none !important;
-}
-
 /* ==========================================
                 Contact Style
 ============================================= */
@@ -362,7 +358,7 @@ header {
 
 .contact h3 {
     color: var(--primary);
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -427,6 +423,20 @@ header {
     z-index: 0;
 }
 
+.service::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -100px;
+    height: 100px;
+    width: 100px;
+    border: 15px solid #f8f8ff;
+    border-radius: 50%;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
 .service .icon {
     height: 60px;
     display: flex;
@@ -466,7 +476,7 @@ header {
 
 /* the slides */
 .slick-slide {
-    margin: 0 20px;
+    margin: 0 10px;
     cursor: grab;
 }
 
@@ -485,9 +495,26 @@ header {
 .why-us ul {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
+    position: relative;
+    z-index: 0;
+}
+
+.why-us ul::before {
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    right: -20px;
+    background: url('../img/pattern-5.png') no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    height: 80px;
+    width: 80px;
+    opacity: 0.3;
+    transform: rotate(140deg);
+    z-index: -1;
 }
 
 .why-us ul li {
@@ -521,4 +548,8 @@ header {
 .why-us ul li:hover::before {
     background: rgba(3, 6, 112, 0.75);
     transition: all 0.3s;
+}
+
+.why-us .ti-header {
+    display: none !important;
 }
