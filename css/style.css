@@ -22,7 +22,7 @@ body {
 }
 
 .navbar-toggler {
-    padding: 0px 5px;
+    padding: 0px;
     border: none;
 }
 
@@ -63,19 +63,38 @@ p {
     font-weight: 600;
     letter-spacing: 0.5px;
     background: var(--primary);
-    padding: 14px 28px;
+    padding: 15px;
+    width: 150px;
     line-height: 1;
-    border-radius: 5px;
+    border-radius: 25px;
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
     transition: all 0.2s linear;
+    position: relative;
 }
 
 .theme-btn:hover {
     color: #ffffff;
     background: var(--secondary);
     transition: all 0.2s linear;
+}
+
+.theme-btn::before {
+    position: absolute;
+    content: '';
+    left: 8px;
+    top: 0px;
+    bottom: 0px;
+    background: url('../img/icons/call-white.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100%;
+    width: 30px;
+}
+
+.theme-btn span {
+    margin-left: 24px;
 }
 
 .title {
@@ -94,43 +113,79 @@ header {
     border-bottom: 1px solid #eeeeee;
 }
 
-.navbar-brand img {
-    height: 40px;
-    margin-left: 5px;
-}
-
 .navbar {
     --bs-navbar-active-color: rgba(3, 6, 112, 1);
     --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%283, 6, 112, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+.navbar img {
+    height: 32px;
+    opacity: 0.85;
+    transition: all 0.3s;
+}
+
+.navbar img:hover {
+    opacity: 1;
+    transition: all 0.3s;
+}
+
+.navbar-brand {
+    margin: 0;
+}
+
+.navbar-brand img {
+    height: 40px;
+    opacity: 1;
+}
+
 .navbar-nav {
-    padding: 5px 0;
+    padding: 3px 0px;
+    background: #fafafa;
+    border-radius: 10px;
+    margin: 10px 0;
 }
 
 .nav-link {
     color: #444444;
-    padding: 3px 0;
+    font-weight: 400;
+    padding: 8px 0;
     text-align: center;
     transition: all 0.3s;
+    border-bottom: 1px solid #ffffff;
+}
+
+.navbar-nav li:last-child > .nav-link {
+    border-bottom: none;
 }
 
 /* ==========================================
                 Hero Style
 ============================================= */
 .hero-area {
-    height: calc(100vh - 66px);
-    min-height: 600px;
+    min-height: 500px;
     background: #f8f8ff;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 50px 0;
+    position: relative;
+}
+
+.hero-area::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 92px;
+    width: 100%;
+    background: #fff;
+    z-index: 0;
 }
 
 .hero-area .hero-img {
     max-width: 200px;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
 }
 
 .hero-area h1 {
@@ -150,7 +205,7 @@ header {
                 Review Style
 ============================================= */
 .reviews {
-    padding: 70px 0;
+    padding: 0 0 70px 0;
 }
 
 .reviews .text {
