@@ -486,6 +486,7 @@ header {
 .why-us {
     padding: 70px 0;
     position: relative;
+    overflow: hidden;
     z-index: 0;
 }
 
